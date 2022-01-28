@@ -78,6 +78,10 @@ nav ul li:first-child {
     width: auto;
 }
 
+.burger {
+    display: none;
+}
+
 /* Hero Image */
 
 .hero {
@@ -241,8 +245,12 @@ nav ul li:first-child {
     flex: 1;
 }
 
-.blurb h3, h5, p {
+.blurb h3, .blurb h5 {
     padding: 0 5%; 
+}
+
+.blurb p {
+    padding: 0 5%;
 }
 
 .blurb h3 {
@@ -268,6 +276,7 @@ nav ul li:first-child {
 }
 
 /* Footer */
+
 footer {
     background: #476072;
     position: absolute;
@@ -289,9 +298,10 @@ footer {
     text-decoration: none;
     color: lightblue;
     top: auto;
+    padding-bottom: 14px;
 }
 
-.credits li {
+.credits {
     justify-content:space-evenly;
     text-align: center;
 }
@@ -328,10 +338,141 @@ footer {
 /* Media Queries */
 
 @media only screen and (max-width: 600px) {
+  /*Global*/
+
+    h1 {
+        font: 40px/1.6 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+    h2 {
+        font: 24px/1.6 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+    h3 {
+        font: 24px/1.6 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+    h4 {
+        font: 600 14px/1.6 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+    h5 {
+        font: 600 14px/1.6 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+   /* Nav Bar*/
+
+   header {
+    margin: 0;
+    height: 90px;
+    background-color: #476072;
+    left: 0px;
+    right: 0px;
+    }
+
+    nav {
+        overflow: hidden;
+        justify-content: end;
+    }
+
+    nav ul {
+        padding-right: 40px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .links {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin-top: auto;
+    }
+
+    nav ul li:first-child {
+        margin-right: auto;
+    }
+
+    .logo {
+        height: 60px;
+        width: auto;
+    }
+
+    .burger {
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+   /* Hero Image*/
+   .hero {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+        left: 0px;
+        right: 0px;
+    }
+   
+    .hero h3 {
+        font: 600 14px/1.6 'Poppins', sans-serif;
+        margin: 0;
+    }
+
+    .content {
+        text-align: left;
+        position: absolute;
+        left: 5%;
+        top: 5%;
+        max-width: 700px;
+    }
+
+   /*About Section*/
+
+    .about h2 {
+        margin-top: 40px;
+        padding-bottom: 24px;
+        font: 600 24px/1.6 'Poppins', sans-serif;
+    }
+
+    .design-style h3 {
+        margin: 40px auto 24px;
+    }
     .profile-flex, .skill-flex {
         flex-flow: column;
     }
 
+    .skills {
+        margin-top: 40px;
+    }
+
+    .skills h3 {
+        padding-bottom: 0;
+    }
+
+    .toolkit {
+        margin-top: 40px;
+    }
+    .toolkit-list {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 50% 50%;
+    }
+
+   /*My Work*/
+    .portfolio {
+        padding-bottom: 24px;
+    }
+
+    .portfolio h2 {
+        margin-top: 40px;
+        padding-bottom: 24px;
+    }
+   
     .portfolio-card {
         flex-flow: column;
     }
@@ -341,17 +482,62 @@ footer {
         width: 100%;
     }
 
-    .toolkit-list {
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-columns: 50% 50%;
-    }
-
-    .blurb {
-        height: 243px;
+    .blurb p {
+        padding-bottom: 1rem;
     }
 
     .mock {
         align-content: center;
         justify-content: center;
+    }
+
+   /*Footer*/
+    footer {
+        margin: 0;
+        padding: 0
+    }
+
+    .socials {
+        justify-content: center;
+        align-content: center;
+        padding-right: 40px;
+        padding-top: 32px;
+    }
+
+    .icon {
+        padding: 0;
+    }
+
+    footer button {
+        max-height: 48px;
+        max-width: 48px;
+    }
+
+    .credits {
+        flex-wrap: wrap;
+        margin: 0 5%;
+        padding: 0 0 12px;
+        justify-content: left;
+    }
+
+    .credits a {
+        text-align: left;
+    }
+
+    .break {
+        display: none;
+    }
+
+    .copyright {
+        text-align: left;
+        align-content: left;
+        padding: 0;
+    }
+
+    .moveup {
+        right: 10%;
+        top: -32px;
+        height: 48px;
+        width: 48px
     }
 }
