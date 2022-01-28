@@ -291,6 +291,7 @@ footer {
     margin: 0 10%;
     list-style-type: none;
     margin-bottom: 16px;
+    padding-inline-end: 40px;
 }
 
 .credits a {
@@ -299,11 +300,6 @@ footer {
     color: lightblue;
     top: auto;
     padding-bottom: 14px;
-}
-
-.credits {
-    justify-content:space-evenly;
-    text-align: center;
 }
 
 .credits a:hover {
@@ -321,6 +317,7 @@ footer {
 .break {
     padding: 0 8px;
     font-size: 14px;
+    transform: translateY(-20%);
 }
 
 .moveup {
@@ -333,6 +330,14 @@ footer {
     background-color: #dde8ee;
     padding: 0px;
     border-radius: 65px;
+}
+
+#copyright {
+    text-align: right;
+    margin: auto;
+    margin-right: 10%;
+    width: 100px;
+    padding-bottom: 16px;
 }
 
 /* Media Queries */
