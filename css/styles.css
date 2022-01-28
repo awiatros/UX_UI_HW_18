@@ -16,7 +16,17 @@ h3 {
     margin: 0;
 }
 
-button, p, .links {
+h4 {
+    font: 24px/1.6 'Poppins', sans-serif;
+    margin: 0;
+}
+
+h5 {
+    font: 600 14px/1.6 'Poppins', sans-serif;
+    margin: 0;
+}
+
+li, button, p, .links {
     font: 14px/1.6 'Poppins', sans-serif;
     margin: 0;
 }
@@ -70,7 +80,7 @@ nav ul li:first-child {
 
 /* Hero Image */
 
-section {
+.hero {
     width: 100%;
     height: 620px;
     overflow: hidden;
@@ -99,13 +109,171 @@ section {
     border-radius: 0px;
 }
 
+/* About */
+
+.about {
+    max-width: 1192px;
+    margin: auto;
+    background-color: #eee;
+}
+
+.about h2 {
+    margin-top: 120px;
+    padding-bottom: 40px;
+}
+
+.design-style h3 {
+    margin: 120px auto 32px;
+}
+
+.profile-flex {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.profile-col {
+    margin: 0 auto;
+    max-width: 360px;
+    justify-content: space-between;
+    padding-top: 2em;
+    text-align: center;
+    align-items: top;
+}
+
+.profile-flex .profile-col {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.profile-col h4 {
+    margin: 1rem 0;
+}
+
+.profile-col h4 {
+    margin: 1rem 0;
+}
+
+.profile-col img {
+    height: 160px;
+    width: 160px;
+}
+
+.skills {
+    margin-top: 120px;
+}
+
+.skills h3 {
+    padding-bottom: 16px;
+}
+
+.skill-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-list {
+    list-style-type: none;
+    text-align: center;
+}
+
+.toolkit {
+    margin-top: 120px;
+}
+
+.toolkit h3 {
+    padding-bottom: 16px;
+}
+
+.toolkit-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    padding: 10px;
+}
+
+.tool-icon {
+    height: 64px;
+    width: 64px;
+}
+
+.toolkit-item {
+    list-style-type: none;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+/* Portfolio */
+
+.portfolio {
+    max-width: 1192px;
+    margin: auto;
+    background-color: #eee;
+    padding-bottom: 120px;
+}
+
+.portfolio h2 {
+    margin-top: 120px;
+    padding-bottom: 40px;
+}
+
+.portfolio-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px 0;
+    border: solid 1px lightgray;
+    box-shadow: 2px 7px 10px lightgray;
+}
+
+.portfolio-card:hover {
+    box-shadow: none;
+    
+}
+
+.card-segment {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.blurb {
+    height: 536px;
+}
+
+.blurb h3, h5, p {
+    padding: 0 5%; 
+}
+
+.blurb h3 {
+    padding-top: 5%;
+    padding-bottom: 1rem;
+}
+
+.blurb h5 {
+    padding-bottom: 1rem;
+}
+
+.mock {
+    height: 536px;
+    background-color: #DDE8EE;
+}
+
+.mock {
+    justify-content: center;
+    align-items: center;
+}
+
 /* Footer */
 footer {
     background: #476072;
     position: absolute;
     left: 0px;
     right: 0px;
-    bottom: 0px;
     color: #eee;
 }
 
@@ -134,4 +302,16 @@ footer {
 
 .socials {
     text-align: center;
+}
+
+.moveup {
+    position: absolute;
+    right: 10%;
+    top: -25%;
+    height: 64px;
+    width: 64px;
+    border: none;
+    background-color: #dde8ee;
+    padding: 0px;
+    border-radius: 65px;
 }
