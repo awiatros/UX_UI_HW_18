@@ -31,7 +31,7 @@ h5 {
     margin: 0;
 }
 
-.credits a, p {
+.credits a, .credits li, #copyright {
     font: 9px/1.6 'Poppins', sans-serif;
     margin: 0;
 }
@@ -236,6 +236,7 @@ nav ul li:first-child {
 .portfolio-card:hover {
     box-shadow: none;
     transform: translateX(5px) translateY(5px);
+    transition: 0.3s;
 }
 
 .card-segment {
@@ -323,7 +324,7 @@ footer {
 .moveup {
     position: absolute;
     right: 10%;
-    top: -25%;
+    top: -20%;
     height: 64px;
     width: 64px;
     border: none;
