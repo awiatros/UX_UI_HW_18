@@ -289,10 +289,10 @@ footer {
 .credits {
     display: flex;
     max-width: 1192px;
-    margin: 0 10%;
+    margin: 0 auto;
     list-style-type: none;
     margin-bottom: 16px;
-    padding-inline-end: 40px;
+    text-align: center;
 }
 
 .credits a {
